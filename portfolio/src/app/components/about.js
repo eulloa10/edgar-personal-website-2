@@ -19,13 +19,12 @@ a software engineer.</h2>
             I build full stack web applications with the latest technologies.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            In my previous career, I was a revenue accountant. I spent my days crunching numbers in Excel and automating repetitve tasks with Python.
+            In my previous career, I was a revenue accountant. I spent my days crunching numbers in Excel and automating repetitive tasks with Python.
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             My professional interests include, but are not limited to: Fintech, Entertainment, EdTech, Healthcare, and E-commerce
           </p>
         </div>
-        <img src=""/>
       </div>
     </div>
   )
