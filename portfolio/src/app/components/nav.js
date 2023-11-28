@@ -51,7 +51,7 @@ export default function Nav() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
             About
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
