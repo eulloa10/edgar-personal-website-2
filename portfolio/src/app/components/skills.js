@@ -1,3 +1,6 @@
+import SkillButton from "./skillButtons";
+const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3']
+
 export default function Skills() {
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -8,6 +11,10 @@ export default function Skills() {
         <h3 className="text-left text-md font-semibold leading-8 text-gray-900">
           Frontend
         </h3>
+        {frontendSkills.map((skill) => {
+          <SkillButton skill={skill}/>
+        })}
+
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -18,8 +25,8 @@ export default function Skills() {
           />
           <img
             className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://abrudz.github.io/logos/Python.svg"
-            alt="Python"
+            src="https://abrudz.github.io/logos/TypeScript.svg"
+            alt="TypeScript"
             width={158}
             height={48}
           />
@@ -45,7 +52,7 @@ export default function Skills() {
             height={48}
           />
         </div>
-        <h3 className="text-left text-md font-semibold leading-8 text-gray-900">
+        {/* <h3 className="text-left text-md font-semibold leading-8 text-gray-900">
           Backend
         </h3>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -77,7 +84,7 @@ export default function Skills() {
             width={158}
             height={48}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
