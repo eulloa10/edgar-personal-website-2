@@ -3,20 +3,14 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
-  HomeIcon,
   ChatBubbleOvalLeftEllipsisIcon,
   HomeModernIcon,
   ArrowTrendingUpIcon,
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
   TicketIcon
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const projects = [
   { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
