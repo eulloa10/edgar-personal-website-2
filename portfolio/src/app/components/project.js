@@ -9,11 +9,17 @@ export default function Project({ project }) {
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{project.name}</p>
               {
-                project.stack.map((technology, index) => {
-                  return (<span key={index} className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{technology}</span>)
-                })
+                project.stack.map((technology, index) => (
+                  <span
+                    key={index}
+                    className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
+                      index < project.stack.length - 1 ? 'mr-1' : '' // Add margin to the right for all elements except the last one
+                    }`}
+                  >
+                    {technology}
+                  </span>
+                ))
               }
-
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 {project.description}
               </p>
