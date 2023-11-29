@@ -39,6 +39,10 @@ export default function Nav() {
     }, 100);
   };
 
+  const handleMobileMenuItemClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="bg-black fixed top-0 w-full z-50 border-b-2 border-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -59,7 +63,11 @@ export default function Nav() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#about" className="text-md font-semibold leading-6 text-white">
+          <a
+            href="#about"
+            className="text-md font-semibold leading-6 text-white"
+            onClick={handleMobileMenuItemClick}
+          >
             About
           </a>
           <a href="#skills" className="text-md font-semibold leading-6 text-white">
@@ -97,7 +105,10 @@ export default function Nav() {
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-black" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -140,12 +151,14 @@ export default function Nav() {
                 <a
                   href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={handleMobileMenuItemClick}
                 >
                   About
                 </a>
                 <a
                   href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={handleMobileMenuItemClick}
                 >
                   Skills
                 </a>
@@ -166,6 +179,7 @@ export default function Nav() {
                             as="a"
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            onClick={handleMobileMenuItemClick}
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -179,6 +193,7 @@ export default function Nav() {
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={handleMobileMenuItemClick}
                 >
                   Contact
                 </a>
