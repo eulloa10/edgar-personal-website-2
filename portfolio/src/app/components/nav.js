@@ -14,13 +14,14 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
+  TicketIcon
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const projects = [
   { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
+  { name: 'Lucky Parking', description: 'LA parking citation analysis web app', href: '#luckyparking', icon: TicketIcon },
   { name: 'Harmonious Voices', description: 'Messaging web app', href: '#harmonious', icon: ChatBubbleOvalLeftEllipsisIcon },
-  { name: 'Spacebnb', description: 'Home rental web app', href: '#spacebnb', icon: HomeIcon },
   { name: 'State of the Market', description: 'Economic indicator tracking app for analysis', href: '#sotm', icon: ArrowTrendingUpIcon },
 ]
 const callsToAction = [
@@ -41,7 +42,7 @@ export default function Nav() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Edgar Ulloa</span>
-            <span className="text-md font-semibold leading-6 text-white">Edgar Ulloa</span>
+            <span className="text-lg font-semibold leading-6 text-white">Edgar Ulloa</span>
           </a>
         </div>
         <div className="flex lg:hidden">

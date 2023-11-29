@@ -1,10 +1,11 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
 import Image from "next/image";
 import Project from './project';
 
 const projects = [
   {
     name: 'Haus',
+    tag: 'haus',
     stack: ['JavaScript', 'Python', 'React', 'Redux', 'Flask', 'HTML5', 'CSS3', 'SQLAlchemy', 'SQLite3', 'PostgreSQL'],
     description:
     'A real estate marketplace web app where users can browse home listings, schedule tours, and make offers',
@@ -28,114 +29,101 @@ const projects = [
       },
     ],
     githubLink: 'https://github.com/eulloa10/haus',
-    liveLink: 'https://house-me.onrender.com/'
+    liveLink: 'https://house-me.onrender.com/',
+    image: '/haus.png'
   },
   {
-    name: 'Haus',
+    name: 'Lucky Parking (Contributor)',
+    tag: 'lucky',
+    stack: ['TypeScript', 'Node.js', 'Express.js', 'React', 'MongoDB'],
     description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    'Visualization of parking data to assist in understanding of the effects of parking policies on a neighborhood by neighborhood basis in the City of Los Angeles',
     features: [
       {
-        name: 'Push to deploy.',
+        name: 'MongoDB Client',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+          'Created connection to MongoDB database, ensuring smooth data storage and retrieval for a dataset of 17 million parking citation records from the city of Los Angeles',
+        icon: CircleStackIcon,
       },
       {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'MapBox API Integration',
+        description: 'Merged custom data for 99 neighborhood councils with the Mapbox API data, resulting in more comprehensive and relevant search results',
+        icon: MapIcon,
       },
       {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
+        name: 'Cross-functional Teamwork',
+        description: 'Collaborated with Product, Engineering, Data Science, and UX, to ensure software solutions aligned with the Hack for LA\'s civic tech objectives',
+        icon: ArrowPathRoundedSquareIcon,
       },
     ],
-    githubLink: 'url goes here',
-    liveLink: 'url goes here'
+    githubLink: 'https://github.com/hackforla/lucky-parking',
+    liveLink: 'https://www.luckyparking.org/',
+    image: '/luckyparking.png'
   },
   {
-    name: 'Haus',
+    name: 'Harmonious Voices (Group Project)',
+    tag: 'harmonious',
+    stack: ['JavaScript', 'Python', 'React', 'Redux', 'Flask', 'HTML5', 'CSS3', 'SQLAlchemy', 'SQLite3', 'PostgreSQL'],
     description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    'A messaging web app where users can form and join interest-based online communities',
     features: [
       {
-        name: 'Push to deploy.',
+        name: 'WebSockets Integration',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+          'Enabled a dynamic real-time instant messaging experience for users by integrating WebSockets',
+        icon: UsersIcon,
       },
       {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'Streamlined Messaging Experience',
+        description: 'Leveraged React component reusability for streamlined, maintainable direct and channel messaging features',
+        icon: ChatBubbleLeftEllipsisIcon,
       },
       {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
+        name: 'User-Centered Design',
+        description: 'Enhanced user experience through optimized message editing and deletion with React state and event handlers, offering intuitive actions through hover interactions',
+        icon: CursorArrowRaysIcon,
       },
     ],
-    githubLink: 'url goes here',
-    liveLink: 'url goes here'
+    githubLink: 'https://github.com/eulloa10/harmonious-voices',
+    liveLink: 'https://harmonious-voices.herokuapp.com/',
+    image: '/harmonious.png'
   },
   {
-    name: 'Haus',
+    name: 'State of the Market',
+    tag: 'sotm',
+    stack: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'PostgreSQL'],
     description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    'An economic health analysis app that monitors 11 key economic indicators via the St. Louis Federal Reserve API. Performing insightful current versus prior period analyses, the app seamlessly delivers monthly Excel reports directly to the user\'s inbox, empowering them to make informed investment decisions.',
     features: [
       {
-        name: 'Push to deploy.',
+        name: 'FRED API Integration',
         description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
+          'Uses the latest data from the St.Louis Federal Reserve to conduct economic analysis',
+        icon: PresentationChartLineIcon,
       },
       {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
+        name: 'AWS Integration',
+        description: 'Leverages S3 buckets to store user reports and ensure timely access',
+        icon: CloudArrowDownIcon,
       },
       {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
+        name: 'Brevo SMTP',
+        description: 'Ensures reliable and secure delivery of monthly Excel reports with minimal downtime and robust performance.',
+        icon: EnvelopeIcon,
       },
     ],
-    githubLink: 'url goes here',
-    liveLink: 'url goes here'
-  },
-  {
-    name: 'Haus',
-    description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    features: [
-      {
-        name: 'Push to deploy.',
-        description:
-          'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: CloudArrowUpIcon,
-      },
-      {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
-      },
-      {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-      },
-    ],
-    githubLink: 'url goes here',
-    liveLink: 'url goes here'
+    githubLink: 'https://github.com/eulloa10/state-of-the-market',
+    liveLink: null,
+    image: '/indevelopment.gif'
   },
   ]
 
 
 export default function AllProjects() {
   return (
-    <div>
+    <>
+      <h2 id="projects" className="text-center bg-white text-2xl font-semibold leading-8 text-gray-900">Projects</h2>
+      <div>
       {
         projects.map((project, index) => {
           return(
@@ -145,6 +133,8 @@ export default function AllProjects() {
           )
         })
       }
-    </div>
+      </div>
+    </>
+
   )
 }

@@ -13,10 +13,9 @@ export default function About() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">I&apos;m Ed,
-a software engineer.</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">California-based software engineer.</h2>
           <p className="mt-6 text-lg leading-8 text-white">
-            I build full stack web applications with the latest technologies.
+            I build full stack web applications using the latest technologies.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
             In my previous career, I was a revenue accountant. I spent my days crunching numbers in Excel and automating repetitive tasks with Python.
@@ -25,7 +24,6 @@ a software engineer.</h2>
             My professional interests include, but are not limited to: Fintech, Entertainment, EdTech, Healthcare, and E-commerce
           </p>
         </div>
-
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 import SkillBadge from "./skillBadge";
 
-const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Redux', ]
-const backendSkills = ['Python', 'Node.js', 'Express', 'Sequelize', 'Flask', 'SQLAlchemy', 'PostgreSQL', 'SQLite3']
-const otherSkills = ['AWS','BigQuery', 'Tableau', 'Heroku', 'Render', 'Postman', 'Jira', 'REST APIs', 'Agile']
+const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Redux']
+const backendSkills = ['Python', 'Node.js', 'Express.js', 'Sequelize', 'Flask', 'SQLAlchemy', 'PostgreSQL', 'SQLite3']
+const otherSkills = ['AWS', 'BigQuery', 'Tableau', 'Heroku', 'Render', 'Postman', 'Jira', 'REST APIs', 'Agile']
 const businessSkills = ['Google Workspace', 'Excel', 'Salesforce', 'Workday', 'Oracle']
 
 export default function Skills() {
@@ -17,13 +17,11 @@ export default function Skills() {
             Frontend
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {frontendSkills.map((skill, index) => {
-            return (
-              <div key={index}>
+            {frontendSkills.map((skill, index) => (
+              <div key={index} className="h-16"> {/* Adjust the height as needed */}
                 <SkillBadge skillName={skill} />
               </div>
-              );
-              })}
+            ))}
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
@@ -31,13 +29,11 @@ export default function Skills() {
             Backend
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {backendSkills.map((skill, index) => {
-            return (
-              <div key={index}>
+            {backendSkills.map((skill, index) => (
+              <div key={index} className="h-16"> {/* Adjust the height as needed */}
                 <SkillBadge skillName={skill} />
               </div>
-              );
-              })}
+            ))}
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
@@ -45,13 +41,11 @@ export default function Skills() {
             Other
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {otherSkills.map((skill, index) => {
-            return (
-              <div key={index}>
+            {otherSkills.map((skill, index) => (
+              <div key={index} className="h-16"> {/* Adjust the height as needed */}
                 <SkillBadge skillName={skill} />
               </div>
-              );
-              })}
+            ))}
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
@@ -59,13 +53,11 @@ export default function Skills() {
             Business
           </h3>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {businessSkills.map((skill, index) => {
-            return (
-              <div key={index}>
+            {businessSkills.map((skill, index) => (
+              <div key={index} className="h-16"> {/* Adjust the height as needed */}
                 <SkillBadge skillName={skill} />
               </div>
-              );
-              })}
+            ))}
           </div>
         </div>
       </div>
