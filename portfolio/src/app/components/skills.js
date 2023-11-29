@@ -9,55 +9,83 @@ export default function Skills() {
   return (
     <div id="skills" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900">
+        <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900 mb-4">
           Skills
         </h2>
         <div className="mb-8 w-full sm:w-1/2">
-          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
             Frontend
           </h3>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {frontendSkills.map((skill, index) => (
-              <div key={index} className="h-16"> {/* Adjust the height as needed */}
-                <SkillBadge skillName={skill} />
-              </div>
-            ))}
+          <div className="mb-4">
+            {
+                  frontendSkills.map((technology, index) => (
+                    <span
+                      key={index}
+                      className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
+                        index < frontendSkills.length - 1 ? 'mr-2' : '' // Add margin to the right for all elements except the last one
+                      } mb-2`}
+                    >
+                      {technology}
+                    </span>
+                  ))
+                }
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
-          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
             Backend
           </h3>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {backendSkills.map((skill, index) => (
-              <div key={index} className="h-16"> {/* Adjust the height as needed */}
-                <SkillBadge skillName={skill} />
-              </div>
-            ))}
+          <div className="mb-4">
+          {
+            backendSkills.map((technology, index) => (
+              <span
+                key={index}
+                className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
+                  index < backendSkills.length - 1 ? 'mr-2' : '' // Add margin to the right for all elements except the last one
+                } mb-2`}
+              >
+                {technology}
+              </span>
+            ))
+            }
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
-          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
             Other
           </h3>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {otherSkills.map((skill, index) => (
-              <div key={index} className="h-16"> {/* Adjust the height as needed */}
-                <SkillBadge skillName={skill} />
-              </div>
-            ))}
+          <div className="mb-4">
+          {
+                otherSkills.map((technology, index) => (
+                  <span
+                    key={index}
+                    className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
+                      index < otherSkills.length - 1 ? 'mr-2' : '' // Add margin to the right for all elements except the last one
+                    } mb-2`}
+                  >
+                    {technology}
+                  </span>
+                ))
+              }
           </div>
         </div>
         <div className="mb-8 w-full sm:w-1/2">
-          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
             Business
           </h3>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
-            {businessSkills.map((skill, index) => (
-              <div key={index} className="h-16"> {/* Adjust the height as needed */}
-                <SkillBadge skillName={skill} />
-              </div>
-            ))}
+          <div className="mb-4">
+          {
+                businessSkills.map((technology, index) => (
+                  <span
+                    key={index}
+                    className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
+                      index < businessSkills.length - 1 ? 'mr-2' : '' // Add margin to the right for all elements except the last one
+                    } mb-2`}
+                  >
+                    {technology}
+                  </span>
+                ))
+              }
           </div>
         </div>
       </div>
