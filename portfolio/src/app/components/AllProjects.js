@@ -93,12 +93,12 @@ const projects = [
     tag: 'sotm',
     stack: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'PostgreSQL'],
     description:
-    'An economic health analysis app that monitors 11 key economic indicators via the St. Louis Federal Reserve API. Performing insightful current versus prior period analyses, the app seamlessly delivers monthly Excel reports directly to the user\'s inbox, empowering them to make informed investment decisions.',
+    'An economic health analysis app that monitors 11 key economic indicators. Performing insightful current versus prior period analyses, the app seamlessly delivers monthly Excel reports directly to the user\'s inbox, empowering them to make informed investment decisions.',
     features: [
       {
         name: 'FRED API Integration',
         description:
-          'Uses the latest data from the St.Louis Federal Reserve to conduct economic analysis',
+          'Uses the latest data from the St. Louis Federal Reserve to conduct economic analysis',
         icon: PresentationChartLineIcon,
       },
       {
