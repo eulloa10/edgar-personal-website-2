@@ -56,14 +56,14 @@ export default function Nav() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#about" className="text-sm font-semibold leading-6 text-white">
+          <a href="#about" className="text-md font-semibold leading-6 text-white">
             About
           </a>
-          <a href="#skills" className="text-sm font-semibold leading-6 text-white">
+          <a href="#skills" className="text-md font-semibold leading-6 text-white">
             Skills
           </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white">
+            <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-white">
               Projects
               <ChevronDownIcon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
             </Popover.Button>
