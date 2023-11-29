@@ -30,7 +30,20 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isProjectsOpen, setProjectsOpen] = useState(false);
+  let closeTimer;
+
+  const handleMouseEnter = () => {
+    clearTimeout(closeTimer);
+    setProjectsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    closeTimer = setTimeout(() => {
+      setProjectsOpen(false);
+    }, 100);
+  };
 
   return (
     <header className="bg-black fixed top-0 w-full z-50 border-b-2 border-black">
@@ -58,7 +71,12 @@ export default function Nav() {
           <a href="#skills" className="text-md font-semibold leading-6 text-white">
             Skills
           </a>
-          <Popover className="relative">
+          <Popover
+            as="div"
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-white">
               Projects
               <ChevronDownIcon className="h-5 w-5 flex-none text-white" aria-hidden="true" />
@@ -66,6 +84,7 @@ export default function Nav() {
 
             <Transition
               as={Fragment}
+              show={isProjectsOpen}
               enter="transition ease-out duration-200"
               enterFrom="opacity-0 translate-y-1"
               enterTo="opacity-100 translate-y-0"
