@@ -3,6 +3,10 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
+  HomeIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  HomeModernIcon,
+  ArrowTrendingUpIcon,
   ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
@@ -14,10 +18,10 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const projects = [
-  { name: 'Haus', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Harmonious Voices', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Spacebnb', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'State of the Market', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
+  { name: 'Harmonious Voices', description: 'Messaging web app', href: '#harmonious', icon: ChatBubbleOvalLeftEllipsisIcon },
+  { name: 'Spacebnb', description: 'Home rental web app', href: '#spacebnb', icon: HomeIcon },
+  { name: 'State of the Market', description: 'Economic indicator tracking app for analysis', href: '#sotm', icon: ArrowTrendingUpIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -32,12 +36,12 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="bg-white fixed top-0 w-full z-50 border-b-2 border-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Edgar Ulloa</span>
-            <span className="text-sm font-semibold leading-6 text-gray-900">Edgar Ulloa</span>
+            <span className="text-md font-semibold leading-6 text-gray-900">Edgar Ulloa</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -54,7 +58,7 @@ export default function Nav() {
           <a href="#about" className="text-sm font-semibold leading-6 text-gray-900">
             About
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#skills" className="text-sm font-semibold leading-6 text-gray-900">
             Skills
           </a>
           <Popover className="relative">
@@ -124,13 +128,13 @@ export default function Nav() {
               <div className="space-y-2 py-6">
 
                 <a
-                  href="#"
+                  href="#about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Skills

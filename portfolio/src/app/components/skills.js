@@ -1,90 +1,72 @@
-import SkillButton from "./skillButtons";
-const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3']
+import SkillBadge from "./skillBadge";
+const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Redux', ]
+const backendSkills = ['Python', 'Node.js', 'Express', 'Sequelize', 'Flask', 'SQLAlchemy', 'PostgreSQL', 'SQLite3']
+const otherSkills = ['AWS','BigQuery', 'Tableau', 'Heroku', 'Render', 'Postman', 'Jira', 'REST APIs', 'Agile']
+const businessSkills = ['Google Workspace', 'Excel', 'Salesforce', 'Workday', 'Oracle']
 
 export default function Skills() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div id="skills" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+        <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900">
           Skills
         </h2>
-        <h3 className="text-left text-md font-semibold leading-8 text-gray-900">
-          Frontend
-        </h3>
-        {frontendSkills.map((skill) => {
-          <SkillButton skill={skill}/>
-        })}
-
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://abrudz.github.io/logos/JS.svg"
-            alt="JavaScript"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://abrudz.github.io/logos/TypeScript.svg"
-            alt="TypeScript"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-            alt="Tuple"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-            alt="SavvyCal"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
+        <div className="mb-8 w-full sm:w-1/2">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+            Frontend
+          </h3>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
+            {frontendSkills.map((skill, index) => {
+            return (
+              <div key={index}>
+                <SkillBadge skillName={skill} />
+              </div>
+              );
+              })}
+          </div>
         </div>
-        {/* <h3 className="text-left text-md font-semibold leading-8 text-gray-900">
-          Backend
-        </h3>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://abrudz.github.io/logos/Python.svg"
-            alt="Python"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-            alt="Tuple"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-            alt="SavvyCal"
-            width={158}
-            height={48}
-          />
-          <img
-            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-            alt="Statamic"
-            width={158}
-            height={48}
-          />
-        </div> */}
+        <div className="mb-8 w-full sm:w-1/2">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+            Backend
+          </h3>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
+            {backendSkills.map((skill, index) => {
+            return (
+              <div key={index}>
+                <SkillBadge skillName={skill} />
+              </div>
+              );
+              })}
+          </div>
+        </div>
+        <div className="mb-8 w-full sm:w-1/2">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+            Other
+          </h3>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
+            {otherSkills.map((skill, index) => {
+            return (
+              <div key={index}>
+                <SkillBadge skillName={skill} />
+              </div>
+              );
+              })}
+          </div>
+        </div>
+        <div className="mb-8 w-full sm:w-1/2">
+          <h3 className="text-left text-xl font-semibold leading-8 text-gray-900">
+            Business
+          </h3>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-4 sm:max-w-xl sm:gap-6 lg:mx-0 lg:max-w-none">
+            {businessSkills.map((skill, index) => {
+            return (
+              <div key={index}>
+                <SkillBadge skillName={skill} />
+              </div>
+              );
+              })}
+          </div>
+        </div>
       </div>
     </div>
   )
