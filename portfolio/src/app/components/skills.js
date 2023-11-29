@@ -1,4 +1,4 @@
-import SkillBadge from "./skillBadge";
+import SkillBadge from "./SkillBadge";
 
 const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Redux']
 const backendSkills = ['Python', 'Node.js', 'Express.js', 'Sequelize', 'Flask', 'SQLAlchemy', 'PostgreSQL', 'SQLite3']

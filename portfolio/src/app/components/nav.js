@@ -20,7 +20,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const projects = [
   { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
-  { name: 'Lucky Parking', description: 'LA parking citation analysis web app', href: '#luckyparking', icon: TicketIcon },
+  { name: 'Lucky Parking', description: 'LA parking citation analysis web app', href: '#lucky', icon: TicketIcon },
   { name: 'Harmonious Voices', description: 'Messaging web app', href: '#harmonious', icon: ChatBubbleOvalLeftEllipsisIcon },
   { name: 'State of the Market', description: 'Economic indicator tracking app for analysis', href: '#sotm', icon: ArrowTrendingUpIcon },
 ]
