@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function Project({ project }) {
   return (
     <div id={project.tag} className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-white">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{project.name}</p>
               {
                 project.stack.map((technology, index) => {
-                  return (<span key={index} class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{technology}</span>)
+                  return (<span key={index} className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">{technology}</span>)
                 })
               }
 
@@ -38,13 +38,18 @@ export default function Project({ project }) {
               </div>
             </div>
           </div>
-          <Image
-            src={project.image}
-            alt="Screenshot of Haus website"
-            className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            width={2432}
-            height={1442}
-          />
+          <div>
+  {project.image && (
+    <Image
+      src={project.image}
+      alt="Screenshot of Haus website"
+      className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[42rem] md:-ml-4 lg:-ml-0"
+      width={2432}
+      height={1442}
+    />
+  )}
+</div>
+
         </div>
       </div>
     </div>

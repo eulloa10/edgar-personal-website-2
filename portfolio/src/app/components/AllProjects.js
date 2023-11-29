@@ -114,7 +114,7 @@ const projects = [
     ],
     githubLink: 'https://github.com/eulloa10/state-of-the-market',
     liveLink: null,
-    image: '/indevelopment.gif'
+    image: null
   },
   ]
 
