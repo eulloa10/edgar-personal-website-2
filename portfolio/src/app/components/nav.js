@@ -42,7 +42,7 @@ export default function Nav() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Edgar Ulloa</span>
-            <span className="text-lg font-semibold leading-6 text-white">Edgar Ulloa</span>
+            <span className="text-md font-semibold leading-6 text-white">Edgar Ulloa</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -102,7 +102,7 @@ export default function Nav() {
           </Popover>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#contact" className="text-sm font-semibold leading-6 text-white">
+          <a href="#contact" className="text-md font-semibold leading-6 text-white">
             Contact <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
