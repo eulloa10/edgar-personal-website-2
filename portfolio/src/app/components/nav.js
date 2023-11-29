@@ -24,10 +24,6 @@ const projects = [
   { name: 'Harmonious Voices', description: 'Messaging web app', href: '#harmonious', icon: ChatBubbleOvalLeftEllipsisIcon },
   { name: 'State of the Market', description: 'Economic indicator tracking app for analysis', href: '#sotm', icon: ArrowTrendingUpIcon },
 ]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -151,7 +147,7 @@ export default function Nav() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...projects, ...callsToAction].map((item) => (
+                        {[...projects].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
