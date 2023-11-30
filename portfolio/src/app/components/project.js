@@ -49,7 +49,7 @@ export default function Project({ project }) {
   {project.image && (
     <Image
       src={project.image}
-      alt="Screenshot of Haus website"
+      alt={`Screenshot of ${project.name} website`}
       className="w-[36rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[42rem] md:-ml-4 lg:-ml-0"
       width={2432}
       height={1442}

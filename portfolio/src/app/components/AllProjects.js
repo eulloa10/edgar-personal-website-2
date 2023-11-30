@@ -1,5 +1,4 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
-import Image from "next/image";
+import { CloudArrowUpIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
 import Project from './project';
 
 const projects = [
@@ -124,15 +123,15 @@ export default function AllProjects() {
     <>
       <h2 id="projects" className="text-center bg-white text-2xl font-semibold leading-8 text-gray-900">Projects</h2>
       <div>
-      {
-        projects.map((project, index) => {
-          return(
-            <div key={index}>
-              <Project project={project}/>
-            </div>
-          )
-        })
-      }
+        {
+          projects.map((project, index) => {
+            return(
+              <div key={index}>
+                <Project project={project}/>
+              </div>
+            )
+          })
+        }
       </div>
     </>
 

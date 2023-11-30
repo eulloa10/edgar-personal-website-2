@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Contact = () => {
-  const containerWidth = 'w-80'; // Adjust the width as needed
+export default function Contact() {
+  const containerWidth = 'w-80';
 
   return (
     <div className="bg-white text-black py-16">
@@ -48,5 +48,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;
