@@ -35,10 +35,10 @@ export default function Project({ project }) {
                 ))}
               </dl>
               <div className="flex gap-4 mt-4">
-                <a href={project.githubLink} className="inline-flex items-center rounded-md bg-black px-2 py-1 text-sm font-medium text-white ring-1 ring-inset ring-gray-500/10">
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-md bg-black px-2 py-1 text-sm font-medium text-white ring-1 ring-inset ring-gray-500/10">
                   GitHub
                 </a>
-                {project.liveLink && <a href={project.liveLink} className="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium text-black ring-1 ring-inset ring-green-500 bg-green-500">
+                {project.liveLink && <a href={project.liveLink} target="_blank" rel="noopener noreferrer"  className="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium text-black ring-1 ring-inset ring-green-500 bg-green-500">
                   Live Website
                 </a>}
               </div>
