@@ -13,20 +13,26 @@ export default function About() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">California-based software engineer.</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software engineer.</h2>
           <p className="mt-6 text-lg leading-8 text-white">
-            I build full stack web applications using the latest technologies.
+            I enjoy the journey from idea to code, and from code to a practical, efficient product.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            In my previous career, I was a revenue accountant. I spent my days crunching numbers in Excel and automating repetitive tasks with Python.
+            I read TLDR daily and like to stay on top of the latest technologies and trends.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            My professional interests include, but are not limited to: Fintech, Entertainment, EdTech, Healthcare, and E-commerce
+            I was previously a revenue accountant. My days were spent figuring out how to replace Excel with Python, and working through the dreaded month/quarter/year-end close.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-white">
+            My professional focus spans Fintech, Real Estate, Entertainment, Healthcare, and E-commerce.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-white">
+            My personal hobbies include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), MLB (Go Dodgers!), and going to music shows 🤘🏻
           </p>
           <a
             href="https://drive.google.com/file/d/1Pj-m5KW7XvfD_HblYKcJqUffrXHw2VCJ/view?usp=drive_link" target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10">
+            className="inline-flex items-center rounded-md bg-white px-10 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10">
               View Resume
             </a>
         </div>

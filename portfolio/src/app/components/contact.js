@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="container mx-auto text-center">
 
 
-        <h2 href="#contact" className="text-3xl font-bold mb-8">Contact</h2>
+        <h2 id="contact" className="text-3xl font-bold mb-8">Contact</h2>
 
         <div className={`mb-8 mx-auto ${containerWidth}`}>
           <div className="p-6 border border-gray-300 rounded-md">

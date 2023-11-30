@@ -47,7 +47,7 @@ export default function Nav() {
     <header className="bg-black fixed top-0 w-full z-50 border-b-2 border-black">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="" className="-m-1.5 p-1.5">
             <span className="sr-only">Edgar Ulloa</span>
             <span className="text-md font-semibold leading-6 text-white">Edgar Ulloa</span>
           </a>
@@ -191,7 +191,7 @@ export default function Nav() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={handleMobileMenuItemClick}
                 >
