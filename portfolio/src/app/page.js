@@ -1,9 +1,9 @@
-import Nav from "./components/nav";
-import About from "./components/about";
-import Skills from "./components/skills";
+import Nav from "./components/Nav";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import AllProjects from "./components/AllProjects";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 export default function Main() {

@@ -12,7 +12,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} strategy="lazyOnload"></Script>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+        `}
+      </Script>
+    {/* <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} strategy="lazyOnload"></Script>
     <Script strategy="lazyOnload" id="gtag">
       {`
         window.dataLayer = window.dataLayer || [];
@@ -20,7 +29,7 @@ export default function RootLayout({ children }) {
         gtag('js', new Date());
         gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
       `}
-    </Script>
+    </Script> */}
       <body className={inter.className}>{children}</body>
     </html>
   )
