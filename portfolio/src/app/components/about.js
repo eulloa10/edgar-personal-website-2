@@ -23,8 +23,12 @@ export default function About() {
           <p className="mt-6 text-lg leading-8 text-white">
             My professional interests include, but are not limited to: Fintech, Entertainment, EdTech, Healthcare, and E-commerce
           </p>
-          <a href="https://drive.google.com/file/d/1Pj-m5KW7XvfD_HblYKcJqUffrXHw2VCJ/view?usp=drive_link" class="inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10">View Resume</a>
-
+          <a
+            href="https://drive.google.com/file/d/1Pj-m5KW7XvfD_HblYKcJqUffrXHw2VCJ/view?usp=drive_link" target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-md bg-white px-2 py-1 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10">
+              View Resume
+            </a>
         </div>
       </div>
     </div>
