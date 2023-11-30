@@ -27,7 +27,7 @@ export default function About() {
             My professional focus spans Fintech, Real Estate, Entertainment, Healthcare, and E-commerce.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            My personal hobbies include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), MLB (Go Dodgers!), and going to music shows 🤘🏻
+            My personal hobbies include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), MLB (Go Dodgers!), and attending live music events.
           </p>
           <a
             href="https://drive.google.com/file/d/1Pj-m5KW7XvfD_HblYKcJqUffrXHw2VCJ/view?usp=drive_link" target="_blank"
