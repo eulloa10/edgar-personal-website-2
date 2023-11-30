@@ -18,7 +18,7 @@ export default function About() {
             I enjoy the journey from idea to code, and from code to a practical, efficient product.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I read TLDR daily and like to stay on top of the latest technologies and trends.
+            I read TLDR daily and seek to stay on top of the latest technologies and trends.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
             I was previously a revenue accountant. My days were spent figuring out how to replace Excel with Python, and working through the dreaded month/quarter/year-end close.
