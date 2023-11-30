@@ -1,5 +1,5 @@
 import { CloudArrowUpIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
-import Project from './project';
+import Project from './Project';
 
 const projects = [
   {
@@ -107,7 +107,7 @@ const projects = [
       },
       {
         name: 'Brevo SMTP',
-        description: 'Ensures reliable and secure delivery of monthly Excel reports with minimal downtime and robust performance.',
+        description: 'Ensures reliable and secure delivery of monthly Excel reports with minimal downtime and robust performance',
         icon: EnvelopeIcon,
       },
     ],
