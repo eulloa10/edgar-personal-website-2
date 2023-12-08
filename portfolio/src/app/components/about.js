@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="about" className="relative isolate overflow-hidden bg-black-900 py-24 sm:py-32">
+    <div id="about" className="relative isolate overflow-hidden bg-black py-24 sm:py-32">
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
