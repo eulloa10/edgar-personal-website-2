@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="p-6 border border-gray-300 rounded-md">
             <h3 className="text-xl font-semibold mb-4">Email</h3>
             <p className="text-blue-600">
-              <a href="mailto:ulloa.edgar0203+ja@gmail.com">ulloa.edgar0203+ja@gmail.com</a>
+              <a href="mailto:edgar.ulloa.careers@gmail.com">edgar.ulloa.careers@gmail.com</a>
             </p>
           </div>
         </div>
