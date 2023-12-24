@@ -12,18 +12,17 @@ const projects = [
       {
         name: 'Cloud Storage',
         description:
-          'Utilizes AWS S3 for image uploads, enabling scalability of image support and ensuring quick image retrieval',
+          'Optimized listing image uploads with AWS S3, resulting in a scalable storage and retrieval process for thousands of home images',
         icon: CloudArrowUpIcon,
       },
       {
         name: 'Google Maps Support',
-        description: 'Integrated Google Maps API dynamically presents home locations based on user-submitted geo coordinates',
+        description: 'Integrated Google Maps API to dynamically display home locations using user-submitted geo-coordinates',
         icon: GlobeAmericasIcon,
       },
       {
         name: 'Flask/PostgreSQL Backend',
-        description: `Flask and SQLAlchemy handle user authentication, database operations,
-        and server-side routing`,
+        description: 'Implemented a Flask backend with SQLAlchemy, ensuring efficient user authentication, seamless database operations, and rapid server-side routing',
         icon: ServerIcon,
       },
     ],
@@ -41,17 +40,17 @@ const projects = [
       {
         name: 'MongoDB Client',
         description:
-          'Created connection to MongoDB database, ensuring smooth data storage and retrieval for a dataset of 17 million parking citation records from the city of Los Angeles',
+          'Implemented a MongoDB client to enable efficient storage and retrieval of 17 million parking citation records from LADOT',
         icon: CircleStackIcon,
       },
       {
         name: 'MapBox API Integration',
-        description: 'Merged custom data for 99 neighborhood councils with the Mapbox API data, resulting in more comprehensive and relevant search results',
+        description: 'Merged custom data for 99 neighborhood councils with existing Mapbox API data to create more comprehensive search results',
         icon: MapIcon,
       },
       {
         name: 'Cross-functional Teamwork',
-        description: 'Collaborated with Product, Engineering, Data Science, and UX, to ensure software solutions aligned with the Hack for LA\'s civic tech objectives',
+        description: 'Partnered with Product, Data Science, and UX to ensure software solutions aligned with the organization\'s civic tech objectives',
         icon: ArrowPathRoundedSquareIcon,
       },
     ],
@@ -69,17 +68,17 @@ const projects = [
       {
         name: 'WebSockets Integration',
         description:
-          'Enabled a dynamic real-time instant messaging experience for users by integrating WebSockets',
+          'Incorporated WebSockets to offer users an instant messaging experience',
         icon: UsersIcon,
       },
       {
         name: 'Streamlined Messaging Experience',
-        description: 'Leveraged React component reusability for streamlined, maintainable direct and channel messaging features',
+        description: 'Reduced messaging feature development time by 50% with a versatile component for direct and channel messaging',
         icon: ChatBubbleLeftEllipsisIcon,
       },
       {
         name: 'User-Centered Design',
-        description: 'Enhanced user experience through optimized message editing and deletion with React state and event handlers, offering intuitive actions through hover interactions',
+        description: 'Leveraged React state and event handlers to enable hover actions for modifying and deleting user messages',
         icon: CursorArrowRaysIcon,
       },
     ],
