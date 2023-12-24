@@ -30,7 +30,7 @@ export default function About() {
             My personal hobbies include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), MLB (Go Dodgers!), and attending live music events.
           </p>
           <a
-            href="https://drive.google.com/file/d/1a4GfIGgaf5hDvgR8zaLMPs5e2zI3J6eu/view?usp=drive_link" target="_blank"
+            href="https://drive.google.com/file/d/1CdMCBojl4-kOvA1ut1IB1kky42_UlYm5/view?usp=drive_link" target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-md bg-white px-10 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10">
               View Resume
