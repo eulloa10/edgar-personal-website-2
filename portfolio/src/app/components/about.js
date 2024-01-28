@@ -29,7 +29,7 @@ export default function About() {
             My professional focus spans Fintech, Real Estate, Entertainment, Healthcare, and E-commerce.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            My personal interests include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), playing tennis, watching the Dodgers (until they inevitably blow up in the postseason), playing guitar and attending live music events (mostly metal and electronic).
+            My personal interests include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), playing tennis, watching the Dodgers (until they inevitably blow up in the postseason), playing guitar, and attending live music events (mostly metal and electronic).
           </p>
 
           <div className="flex items-center">
