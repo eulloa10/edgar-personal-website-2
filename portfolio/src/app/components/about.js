@@ -37,7 +37,7 @@ export default function About() {
               href="https://drive.google.com/file/d/10u4LZqLVkNwgmT8EGJku3tGmt3tXAijq/view?usp=sharing" target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
-                Resume
+                Résumé
             </a>
             <a
               href="https://github.com/eulloa10" target="_blank"
