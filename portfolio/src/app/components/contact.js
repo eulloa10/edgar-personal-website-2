@@ -13,7 +13,6 @@ export default function Contact() {
 
         <div className={`mb-8 mx-auto ${containerWidth}`}>
           <div className="p-6 border border-gray-300 rounded-md">
-            <h3 className="text-xl font-semibold mb-4">Email</h3>
             <p className="text-blue-600">
               <a href="mailto:edgar.ulloa.careers@gmail.com">edgar.ulloa.careers@gmail.com</a>
             </p>
@@ -28,7 +27,6 @@ export default function Contact() {
             className="p-6 border border-gray-300 rounded-md flex items-center justify-center"
           >
             <Image src="/github-mark.png" alt="GitHub Icon" width={40} height={40} />
-            <span className="ml-4">GitHub</span>
           </a>
         </div>
 
@@ -40,7 +38,6 @@ export default function Contact() {
             className="p-6 border border-gray-300 rounded-md flex items-center justify-center"
           >
             <Image src="/linkedin.png" alt="LinkedIn Icon" width={40} height={40} />
-            <span className="ml-4">LinkedIn</span>
           </a>
         </div>
 

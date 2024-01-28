@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div id="about" className="relative isolate overflow-hidden bg-black py-24 sm:py-32">
@@ -29,12 +31,27 @@ export default function About() {
           <p className="mt-6 text-lg leading-8 text-white">
             My personal hobbies include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), MLB (Go Dodgers!), and attending live music events.
           </p>
-          <a
-            href="https://drive.google.com/file/d/10u4LZqLVkNwgmT8EGJku3tGmt3tXAijq/view?usp=sharing" target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center rounded-md bg-white px-10 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10">
-              View Resume
-          </a>
+
+          <div className="flex items-center">
+            <a
+              href="https://drive.google.com/file/d/10u4LZqLVkNwgmT8EGJku3tGmt3tXAijq/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
+                Resume
+            </a>
+            <a
+              href="https://github.com/eulloa10" target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
+                <Image src="/github-mark-white.png" alt="GitHub Icon" width={40} height={40} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/edgarulloa/" target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
+                <Image src="/linkedin.png" alt="LinkedIn Icon" width={40} height={40} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
