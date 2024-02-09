@@ -15,23 +15,16 @@ export default function About() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software engineer.</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer.</h1>
           <p className="mt-6 text-lg leading-8 text-white">
-            I enjoy the journey from idea to code, and from code to a practical, efficient product.
+            I build full-stack web apps and craft the occasional script to automate redundant tasks.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I read TLDR daily and seek to stay on top of the latest technologies and trends.
+            I also have over 8 years of experience as a revenue accountant working across various industries including: Fintech, Real Estate, Entertainment, and E-commerce. During this time, I served as both an individual contributor and team supervisor, overseeing tasks ranging from revenue recognition to contract review, billing, invoicing, reporting, and accounts receivable management. However, my true passion emerged in automating processes and complex Excel workflows with Python and SQL. This experience paved the way for my transition into software engineering.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I was previously a revenue accountant. My days were spent figuring out how to replace Excel with Python, and working through the dreaded month/quarter/year-end close.
+            When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), learning about investment strategies, watching movies (AMC Stubs A-List is great!), and putting my National Park Pass to use.
           </p>
-          <p className="mt-6 text-lg leading-8 text-white">
-            My professional focus spans Fintech, Real Estate, Entertainment, Healthcare, and E-commerce.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-white">
-            My personal interests include: learning new investment strategies, following wallstbets memes, watching and playing basketball (Go Lakers!), playing tennis, watching the Dodgers (until they inevitably blow up in the postseason), playing guitar, and attending live music events (mostly metal and electronic).
-          </p>
-
           <div className="flex items-center">
             <a
               href="https://drive.google.com/file/d/10u4LZqLVkNwgmT8EGJku3tGmt3tXAijq/view?usp=sharing" target="_blank"
