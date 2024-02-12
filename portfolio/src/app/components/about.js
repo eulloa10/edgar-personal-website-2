@@ -35,13 +35,13 @@ export default function About() {
             <a
               href="https://github.com/eulloa10" target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
+              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black mt-10 mr-2 h-12">
                 <Image src="/github-mark-white.png" alt="GitHub Icon" width={40} height={40} />
             </a>
             <a
               href="https://www.linkedin.com/in/edgarulloa/" target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black ring-1 ring-inset ring-gray-500/10 mt-10 mr-2 h-12">
+              className="inline-flex items-center rounded-md bg-black px-2 py-2 text-sm font-medium text-black mt-10 mr-2 h-12">
                 <Image src="/linkedin.png" alt="LinkedIn Icon" width={40} height={40} />
             </a>
           </div>
