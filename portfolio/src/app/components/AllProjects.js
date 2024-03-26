@@ -91,7 +91,7 @@ const projects = [
     tag: 'sotm',
     stack: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'PostgreSQL'],
     description:
-    'An economic health analysis app that monitors 11 key economic indicators. Performing insightful current versus prior period analyses, the app seamlessly delivers monthly Excel reports directly to the user\'s inbox, empowering them to make informed investment decisions.',
+    'An economic health analysis app that monitors 11 key economic indicators. Performing insightful current versus prior period analyses, the app delivers monthly Excel reports directly to the user\'s inbox, enabling them to make informed investment decisions.',
     features: [
       {
         name: 'FRED API Integration',
