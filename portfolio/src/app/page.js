@@ -11,8 +11,8 @@ export default function Main() {
     <>
       <Nav />
       <About />
-      <Skills />
       <AllProjects />
+      <Skills />
       <Contact />
       <Footer />
     </>

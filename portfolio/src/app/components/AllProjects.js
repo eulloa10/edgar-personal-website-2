@@ -120,7 +120,7 @@ const projects = [
 export default function AllProjects() {
   return (
     <>
-      <h2 id="projects" className="text-center bg-white text-2xl font-semibold leading-8 text-gray-900">Projects</h2>
+      <h2 id="projects" className="text-center bg-white text-2xl font-semibold leading-8 text-gray-900 pt-12">Projects</h2>
       <div>
         {
           projects.map((project, index) => {

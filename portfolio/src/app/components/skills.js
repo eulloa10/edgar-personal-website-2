@@ -7,7 +7,7 @@ const businessSkills = ['Google Workspace', 'Excel', 'Salesforce', 'Workday', 'O
 
 export default function Skills() {
   return (
-    <div id="skills" className="bg-white py-24 sm:py-32">
+    <div id="skills" className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900 mb-4">
           Skills

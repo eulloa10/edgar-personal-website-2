@@ -17,10 +17,10 @@ export default function About() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer.</h1>
           <p className="mt-6 text-lg leading-8 text-white">
-            I build full stack web apps and craft the occasional script to automate redundant tasks.
+            I build full stack web apps and create scripts to automate redundant tasks.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I also have over 8 years of experience as a revenue accountant working across various industries including: Fintech, Real Estate, Entertainment, and E-commerce. During this time, I served as both an individual contributor and team supervisor, overseeing tasks ranging from revenue recognition to contract review, billing, invoicing, reporting, and accounts receivable management. However, my true passion emerged in automating processes and complex Excel workflows with Python and SQL. This experience paved the way for my transition into software engineering.
+            I also have over 8 years of experience in finance and accounting working across various industries including: Real Estate, Media and Entertainment, and E-commerce. However, my true passion emerged in automating processes and complex Excel workflows with Python and SQL. This experience paved the way for my transition into software engineering.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
             When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), learning about investment strategies, watching movies (AMC Stubs A-List is great!), and putting my National Park Pass to use.
