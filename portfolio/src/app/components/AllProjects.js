@@ -83,7 +83,7 @@ const projects = [
       },
     ],
     githubLink: 'https://github.com/eulloa10/harmonious-voices',
-    liveLink: 'https://harmonious-voices.herokuapp.com/',
+    liveLink: 'https://harmonious-voices.onrender.com/',
     image: '/harmonious.png'
   },
   {
