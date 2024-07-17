@@ -3,32 +3,32 @@ import Project from './Project';
 
 const projects = [
   {
-    name: 'Haus',
-    tag: 'haus',
-    stack: ['JavaScript', 'Python', 'React', 'Redux', 'Flask', 'HTML5', 'CSS3', 'SQLAlchemy', 'SQLite3', 'PostgreSQL'],
+    name: 'Superset (Contributor)',
+    tag: 'superset',
+    stack: ['TypeScript', 'React', 'Jest', 'Cypress', 'Python', 'Flask', 'Celery'],
     description:
-    'A real estate marketplace web app where users can browse home listings, schedule tours, and make offers',
+    'Apache Superset is an open source Data Visualization and Data Exploration Platform',
     features: [
       {
-        name: 'Cloud Storage',
+        name: 'Screenshot Generation',
         description:
-          'Optimized listing image uploads with AWS S3, resulting in a scalable storage and retrieval process for thousands of home images',
-        icon: CloudArrowUpIcon,
+          'Developed RESTful API endpoints for generating screenshots, allowing users to share different dashboard states',
+        icon: CircleStackIcon,
       },
       {
-        name: 'Google Maps Support',
-        description: 'Integrated Google Maps API to dynamically display home locations using user-submitted geo-coordinates',
-        icon: GlobeAmericasIcon,
+        name: 'Accessibility',
+        description: 'Improved accessibility for users with disabilities by implementing proper HTML semantics for clickable elements',
+        icon: MapIcon,
       },
       {
-        name: 'Flask/PostgreSQL Backend',
-        description: 'Implemented a Flask backend with SQLAlchemy, ensuring efficient user authentication, seamless database operations, and rapid server-side routing',
-        icon: ServerIcon,
+        name: 'User and Developer Experience',
+        description: 'Collaborated with the Project Management Committee to improve project quality and developer experience',
+        icon: ArrowPathRoundedSquareIcon,
       },
     ],
-    githubLink: 'https://github.com/eulloa10/haus',
-    liveLink: 'https://house-me.onrender.com/',
-    image: '/haus.png'
+    githubLink: 'https://github.com/apache/superset',
+    liveLink: 'https://superset.apache.org/',
+    image: '/superset.png'
   },
   {
     name: 'Lucky Parking (Contributor)',
@@ -57,6 +57,34 @@ const projects = [
     githubLink: 'https://github.com/hackforla/lucky-parking',
     liveLink: 'https://www.luckyparking.org/',
     image: '/luckyparking.png'
+  },
+  {
+    name: 'Haus',
+    tag: 'haus',
+    stack: ['JavaScript', 'Python', 'React', 'Redux', 'Flask', 'HTML5', 'CSS3', 'SQLAlchemy', 'SQLite3', 'PostgreSQL'],
+    description:
+    'A real estate marketplace web app where users can browse home listings, schedule tours, and make offers',
+    features: [
+      {
+        name: 'Cloud Storage',
+        description:
+          'Optimized listing image uploads with AWS S3, resulting in a scalable storage and retrieval process for thousands of home images',
+        icon: CloudArrowUpIcon,
+      },
+      {
+        name: 'Google Maps Support',
+        description: 'Integrated Google Maps API to dynamically display home locations using user-submitted geo-coordinates',
+        icon: GlobeAmericasIcon,
+      },
+      {
+        name: 'Flask/PostgreSQL Backend',
+        description: 'Implemented a Flask backend with SQLAlchemy, ensuring efficient user authentication, seamless database operations, and rapid server-side routing',
+        icon: ServerIcon,
+      },
+    ],
+    githubLink: 'https://github.com/eulloa10/haus',
+    liveLink: 'https://house-me.onrender.com/',
+    image: '/haus.png'
   },
   {
     name: 'Harmonious Voices (Group Project)',
@@ -89,7 +117,7 @@ const projects = [
   {
     name: 'State of the Market',
     tag: 'sotm',
-    stack: ['TypeScript', 'JavaScript', 'Node.js', 'Express.js', 'PostgreSQL'],
+    stack: ['TypeScript', 'Next.js', 'Python', 'Django', 'PostgreSQL'],
     description:
     'An economic health analysis app that monitors 11 key economic indicators. Performing insightful current versus prior period analyses, the app delivers monthly Excel reports directly to the user\'s inbox, enabling them to make informed investment decisions.',
     features: [

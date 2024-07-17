@@ -1,9 +1,9 @@
 import SkillBadge from "./SkillBadge";
 
-const frontendSkills = ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'React', 'Redux'];
-const backendSkills = ['Python', 'Node.js', 'Express.js', 'Sequelize', 'Flask', 'SQLAlchemy', 'PostgreSQL', 'SQLite3'];
-const otherSkills = ['AWS', 'BigQuery', 'Tableau', 'Heroku', 'Render', 'Postman', 'Jira', 'REST APIs', 'Agile'];
-const businessSkills = ['Google Workspace', 'Excel', 'Salesforce', 'Workday', 'Oracle'];
+const languages = ['JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'];
+const technologies = ['Django', 'Flask', 'Next.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'Jest', 'Cypress', 'PostgreSQL'];
+const libraries = ['React', 'Redux','Sequelize', 'SQLAlchemy', 'Ant Design'];
+const tools = ['Docker', 'AWS S3', 'Postman', 'Jira', 'Git', 'BigQuery', 'Tableau', 'Render', 'Agile', 'Excel', 'Salesforce', 'Workday', 'Oracle'];
 
 export default function Skills() {
   return (
@@ -16,14 +16,14 @@ export default function Skills() {
         { /* Frontend Skills */}
         <div className="mb-8">
           <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
-            Frontend
+            Languages
           </h3>
           <div className="mb-4">
-            {frontendSkills.map((technology, index) => (
+            {languages.map((technology, index) => (
               <span
                 key={index}
                 className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
-                  index < frontendSkills.length - 1 ? 'mr-2' : ''
+                  index < languages.length - 1 ? 'mr-2' : ''
                 } mb-2`}
               >
                 {technology}
@@ -35,14 +35,14 @@ export default function Skills() {
         { /* Backend Skills */}
         <div className="mb-8">
           <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
-            Backend
+            Technologies
           </h3>
           <div className="mb-4">
-            {backendSkills.map((technology, index) => (
+            {technologies.map((technology, index) => (
               <span
                 key={index}
                 className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
-                  index < backendSkills.length - 1 ? 'mr-2' : ''
+                  index < technologies.length - 1 ? 'mr-2' : ''
                 } mb-2`}
               >
                 {technology}
@@ -54,14 +54,14 @@ export default function Skills() {
         { /* Other Skills */}
         <div className="mb-8">
           <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
-            Other
+            Libraries
           </h3>
           <div className="mb-4">
-            {otherSkills.map((technology, index) => (
+            {libraries.map((technology, index) => (
               <span
                 key={index}
                 className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
-                  index < otherSkills.length - 1 ? 'mr-2' : ''
+                  index < libraries.length - 1 ? 'mr-2' : ''
                 } mb-2`}
               >
                 {technology}
@@ -73,14 +73,14 @@ export default function Skills() {
         { /* Business Skills */}
         <div className="mb-8">
           <h3 className="text-left text-xl font-semibold leading-8 text-gray-900 mb-4">
-            Business
+            Tools
           </h3>
           <div className="mb-4">
-            {businessSkills.map((technology, index) => (
+            {tools.map((technology, index) => (
               <span
                 key={index}
                 className={`inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10 ${
-                  index < businessSkills.length - 1 ? 'mr-2' : ''
+                  index < tools.length - 1 ? 'mr-2' : ''
                 } mb-2`}
               >
                 {technology}

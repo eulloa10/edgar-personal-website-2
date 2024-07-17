@@ -4,6 +4,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ChatBubbleOvalLeftEllipsisIcon,
+  ChartBarSquareIcon,
   HomeModernIcon,
   ArrowTrendingUpIcon,
   Bars3Icon,
@@ -13,8 +14,9 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const projects = [
-  { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
+  { name: 'Apache Superset', description: 'Data Visualization and Data Exploration Platform', href: '#superset', icon: ChartBarSquareIcon },
   { name: 'Lucky Parking', description: 'LA parking citation analysis web app', href: '#lucky', icon: TicketIcon },
+  { name: 'Haus', description: 'Real estate marketplace web app', href: '#haus', icon: HomeModernIcon },
   { name: 'Harmonious Voices', description: 'Messaging web app', href: '#harmonious', icon: ChatBubbleOvalLeftEllipsisIcon },
   { name: 'State of the Market', description: 'Economic indicator tracking app for analysis', href: '#sotm', icon: ArrowTrendingUpIcon },
 ]
