@@ -17,10 +17,10 @@ export default function About() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer.</h1>
           <p className="mt-6 text-lg leading-8 text-white">
-            I am a backend/data-focused software engineer and a former revenue accountant.
+            I am a software engineer with a strong focus on full-stack web development and data.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            My experience spans several industries including real estate, media and entertainment, and e-commerce. This unique combination of skills enables me to approach challenges with a thorough understanding of both technical and financial perspectives.
+            With over 8 years of experience, beginning as a revenue accountant, I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce. This unique combination of skills enables me to approach challenges with a thorough understanding of both technical and financial perspectives.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
             When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), learning about investment strategies, watching movies (AMC Stubs A-List is great), and putting my National Park Pass to use.
