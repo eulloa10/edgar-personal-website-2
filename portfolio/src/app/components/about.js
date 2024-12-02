@@ -15,15 +15,15 @@ export default function About() {
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer.</h1>
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer*</h1>
           <p className="mt-6 text-lg leading-8 text-white">
-            I am a software engineer with a strong focus on full-stack web development and data.
+            I'm a software engineer focused on full-stack web development and data engineering. I also have a background in revenue accounting, where I’ve improved financial processes and automated reporting. I enjoy using technology to solve difficult problems.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            With over 8 years of experience, beginning as a revenue accountant, I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce. This unique combination of skills enables me to approach challenges with a thorough understanding of both technical and financial perspectives.
+            I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce. This unique combination of skills enables me to approach challenges with a thorough understanding of both technical and financial perspectives.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), learning about investment strategies, watching movies (AMC Stubs A-List is great), and putting my National Park Pass to use.
+            When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), playing fantasy basketball, watching Lakers and Dodgers games, and going to concerts.
           </p>
           <div className="flex items-center">
             <a
