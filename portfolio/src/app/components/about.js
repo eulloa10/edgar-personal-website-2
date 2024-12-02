@@ -17,13 +17,16 @@ export default function About() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Software Engineer*</h1>
           <p className="mt-6 text-lg leading-8 text-white">
-            I'm a software engineer focused on full-stack web development and data engineering. I also have a background in revenue accounting, where I’ve automated financial processes and reporting. I enjoy using technology to solve difficult problems.
+            I'm a software engineer focused on full-stack web development and data engineering.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce.
+            I enjoy using technology to solve difficult problems.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            When I’m not building products, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), playing fantasy basketball, watching Lakers and Dodgers games, and going to concerts.
+            When I’m not working on projects, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), playing fantasy basketball, watching Lakers and Dodgers games, and going to concerts.
+          </p>
+          <p className="mt-6 text-lg leading-8 text-white">
+            * I also have a background in revenue accounting, where I’ve automated financial processes and reporting. I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce.
           </p>
           <div className="flex items-center">
             <a
