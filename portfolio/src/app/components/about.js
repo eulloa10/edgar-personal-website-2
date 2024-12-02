@@ -23,7 +23,7 @@ export default function About() {
             I enjoy using technology to solve difficult problems.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            When I’m not working on projects, I enjoy reading through the daily TLDR newsletters (Web Dev, AI, Crypto), playing fantasy basketball, watching Lakers and Dodgers games, and going to concerts.
+            When I’m not working on projects, I'm browsing through the daily TLDR newsletters (Web Dev, AI, Crypto), playing fantasy basketball, watching Lakers and Dodgers games, and going to concerts.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
             * I also have a background in revenue accounting, where I’ve automated financial processes and reporting. I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce.
