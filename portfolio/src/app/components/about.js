@@ -20,9 +20,6 @@ export default function About() {
             I'm a software engineer focused on full-stack web development and data engineering.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
-            I enjoy using technology to solve difficult problems.
-          </p>
-          <p className="mt-6 text-lg leading-8 text-white">
             I also have a background in revenue accounting, where I’ve automated financial processes and reporting. I've worked across several industries, including tech, real estate, media, entertainment, and e-commerce.
           </p>
           <p className="mt-6 text-lg leading-8 text-white">
