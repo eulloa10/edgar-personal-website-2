@@ -1,7 +1,7 @@
-export default function SkillBadge({skillName}) {
+export default function SkillBadge({ skill }) {
   return (
-    <span className="inline-flex items-center rounded-md bg-black bg-opacity-10 px-2 py-1 text-md font-medium text-black ring-1 ring-inset ring-black/10">
-        {skillName}
+    <span className="inline-flex items-center rounded-md bg-gray-100 px-3 py-1 text-sm font-medium text-gray-800">
+      {skill}
     </span>
-  )
+  );
 }

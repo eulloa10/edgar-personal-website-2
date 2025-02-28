@@ -1,9 +1,37 @@
-import { CloudArrowUpIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, ServerIcon, GlobeAmericasIcon, CircleStackIcon, MapIcon, ArrowPathRoundedSquareIcon, ChatBubbleLeftEllipsisIcon, UsersIcon, CursorArrowRaysIcon, PresentationChartLineIcon, CloudArrowDownIcon, EnvelopeIcon, Cog6ToothIcon } from '@heroicons/react/20/solid'
 import Project from './Project';
 
 const projects = [
   {
-    name: 'Superset (Contributor)',
+    name: 'Automated Economic Indicator Dashboard',
+    tag: 'financial-indicators-pipeline',
+    stack: ['Python', 'AWS', 'Airflow', 'Terraform', 'PostgreSQL', 'Glue', 'Looker Studio'],
+    description:
+    'Automated data pipeline to track economic indicators over time. Data is ingested from the FRED API, stored in an S3-based data lake, transformed using AWS Glue, and stored in an RDS database. An interactive Looker Studio dashboard visualizes key economic indicators for data-driven decisions.',
+    features: [
+      {
+        name: 'AWS Data Pipeline',
+        description:
+          'Data ingestion (Glue), transformation (Glue), and storage (S3, RDS) on AWS.',
+        icon: PresentationChartLineIcon,
+      },
+      {
+        name: 'Infrastructure as Code (Terraform)',
+        description: 'Automated provisioning and management of AWS resources (S3, Glue, RDS, EC2) using Terraform.',
+        icon: CloudArrowDownIcon,
+      },
+      {
+        name: 'Workflow Orchestration (Airflow)',
+        description: 'Automated data pipeline management and regular updates using Apache Airflow on EC2.',
+        icon: Cog6ToothIcon,
+      },
+    ],
+    githubLink: 'https://github.com/eulloa10/financial-data-pipeline',
+    liveLink: null,
+    image: '/fred_fdp_screenshot.png'
+  },
+  {
+    name: 'Apache Superset (Open Source Contributor)',
     tag: 'superset',
     stack: ['TypeScript', 'React', 'Jest', 'Cypress', 'Python', 'Flask', 'Celery'],
     description:
@@ -31,7 +59,7 @@ const projects = [
     image: '/superset.png'
   },
   {
-    name: 'Lucky Parking (Contributor)',
+    name: 'Lucky Parking (Open Source Contributor)',
     tag: 'lucky',
     stack: ['TypeScript', 'Node.js', 'Express.js', 'React', 'MongoDB'],
     description:
@@ -87,7 +115,7 @@ const projects = [
     image: '/haus.png'
   },
   {
-    name: 'Harmonious Voices (Group Project)',
+    name: 'Harmonious Voices (Team Project)',
     tag: 'harmonious',
     stack: ['JavaScript', 'Python', 'React', 'Redux', 'Flask', 'HTML5', 'CSS3', 'SQLAlchemy', 'SQLite3', 'PostgreSQL'],
     description:
@@ -111,45 +139,17 @@ const projects = [
       },
     ],
     githubLink: 'https://github.com/eulloa10/harmonious-voices',
-    liveLink: 'https://harmonious-voices.onrender.com/',
+    liveLink: null,
     image: '/harmonious.png'
   },
-  {
-    name: 'State of the Market',
-    tag: 'sotm',
-    stack: ['TypeScript', 'Next.js', 'Python', 'Django', 'PostgreSQL'],
-    description:
-    'An economic health analysis app that monitors 11 key economic indicators. Performing insightful current versus prior period analyses, the app delivers monthly Excel reports directly to the user\'s inbox, enabling them to make informed investment decisions.',
-    features: [
-      {
-        name: 'FRED API Integration',
-        description:
-          'Uses the latest data from the St. Louis Federal Reserve to conduct economic analysis',
-        icon: PresentationChartLineIcon,
-      },
-      {
-        name: 'AWS Integration',
-        description: 'Leverages S3 buckets to store user reports and ensure timely access',
-        icon: CloudArrowDownIcon,
-      },
-      {
-        name: 'Brevo SMTP',
-        description: 'Ensures reliable and secure delivery of monthly Excel reports with minimal downtime and robust performance',
-        icon: EnvelopeIcon,
-      },
-    ],
-    githubLink: 'https://github.com/eulloa10/state-of-the-market',
-    liveLink: null,
-    image: '/sotm.png'
-  },
-  ]
+]
 
 
 export default function AllProjects() {
   return (
     <>
-      <h2 id="projects" className="text-center bg-white text-2xl font-semibold leading-8 text-gray-900 pt-12">Projects</h2>
-      <div>
+      <h2 id="projects" className="text-center bg-white text-3xl font-semibold leading-8 text-gray-900 pt-12">Projects</h2>
+      <div id="projects-section">
         {
           projects.map((project, index) => {
             return(

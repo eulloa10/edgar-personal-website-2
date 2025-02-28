@@ -2,46 +2,34 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function Contact() {
-  const containerWidth = 'w-80';
-
   return (
-    <div className="bg-white text-black py-16">
-      <div className="container mx-auto text-center">
+    <div className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <h2 id="contact" className="text-3xl font-semibold leading-8 text-gray-900 mb-12">
+          Contact
+        </h2>
 
-
-        <h2 id="contact" className="text-2xl font-bold mb-8">Contact</h2>
-
-        <div className={`mb-8 mx-auto ${containerWidth}`}>
-          <div className="p-6 border border-gray-300 rounded-md">
-            <p className="text-blue-600">
-              <a href="mailto:edgar.ulloa.careers@gmail.com">edgar.ulloa.careers@gmail.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div className={`mb-8 mx-auto ${containerWidth}`}>
+        <div className="flex justify-center space-x-4">
           <a
             href="https://github.com/eulloa10"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-6 border border-gray-300 rounded-md flex items-center justify-center"
+            className="inline-flex items-center rounded-md bg-gray-800 px-4 py-3 text-white hover:bg-gray-700 transition-colors"
           >
-            <Image src="/github-mark.png" alt="GitHub Icon" width={40} height={40} />
+            <Image src="/github-mark-white.png" alt="GitHub Icon" width={24} height={24} className="mr-2" />
+            GitHub
           </a>
-        </div>
-
-        <div className={`mx-auto ${containerWidth}`}>
           <a
             href="https://www.linkedin.com/in/edgarulloa/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-6 border border-gray-300 rounded-md flex items-center justify-center"
+            className="inline-flex items-center rounded-md bg-blue-600 px-4 py-3 text-white hover:bg-blue-700 transition-colors"
           >
-            <Image src="/linkedin.png" alt="LinkedIn Icon" width={40} height={40} />
+            <Image src="/linkedin.png" alt="LinkedIn Icon" width={24} height={24} className="mr-2" />
+            LinkedIn
           </a>
         </div>
-
       </div>
     </div>
   );
-};
+}
